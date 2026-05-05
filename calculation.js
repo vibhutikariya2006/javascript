@@ -1,14 +1,10 @@
-// Question-1 Write a program to find longest country name from the array of string
-console.log("Question-1");
-const country = ["India", "America", "Japan", "UAE", "Iran"]
-let temp = "";
-for (let i = 0; i < country.length; i++) {
-  if(country[i].length > temp.length){
-     temp = country[i]
-  };
-}
+ // Question-1 Write a program to find the product of two number using arrow function
+ console.log("Question-1");
 
-console.log("Longest Country name in the array:",temp);
+ let arrow = () =>{
+console.log("Multiplication of 3 and 10 = ", 3*10);
+}
+arrow();
 
 console.log("Question-2");
 
@@ -57,6 +53,8 @@ count++
 }
 console.log(count);
 
+
+
  // Question-6 Write a program to find the sum of two numbers using function  
  console.log("Question-6");
  function sumoftwo(a,b){
@@ -71,13 +69,17 @@ const filterfun = number.filter((number)=> number < 100);
 console.log(filterfun);
 
 
- // Question-8 Write a program to find the product of two number using arrow function
- console.log("Question-8");
-
- let arrow = () =>{
-console.log("Multiplication of 3 and 10 = ", 3*10);
+// Question-8 Write a program to find longest country name from the array of string
+console.log("Question-8");
+const country = ["India", "America", "Japan", "UAE", "Iran"]
+let temp = "";
+for (let i = 0; i < country.length; i++) {
+  if(country[i].length > temp.length){
+     temp = country[i]
+  };
 }
-arrow();
+
+console.log("Longest Country name in the array:",temp);
 
  // Question 9- Write a program using IIFE function to print your name
  console.log("Question-9");
