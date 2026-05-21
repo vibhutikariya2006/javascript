@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Marvel Slider</title>
+
+  <
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+
+<body class="m-0 overflow-hidden bg-black">
+
+ 
+  <nav class="w-full bg-black text-white px-6  pb-4 border-b border-red-600">
+
+    <div class="flex items-center justify-between">
+
+    
+      <div class="flex items-center gap-3">
+
+        <div class="bg-red-600 px-4 py-2 rounded-md shadow-lg">
+          <h1 class="text-white text-2xl font-extrabold tracking-widest">
+            MARVEL
+          </h1>
+        </div>
+
+      </div>
+
+    
+      <ul class="flex items-center gap-6 text-lg font-semibold">
+
+        <li>
+          <a href="#" class="hover:text-red-500 duration-300">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-red-500 duration-300">
+            Heroes
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-red-500 duration-300">
+            Movies
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-red-500 duration-300">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  
+  <section class="relative w-full overflow-hidden">
+
+   
+    <div class="swiper mySwiper w-full h-[calc(100vh-72px)]">
+
+      <div class="swiper-wrapper">
+
+        
+        <div class="swiper-slide">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjekS3AUYYwpVw4DCWbyhDAjGZ8oi4qtTfIA&s"
+            class="w-full h-[calc(100vh-72px)] object-cover"
+            alt=""
+          />
+        </div>
+
+       
+        <div class="swiper-slide">
+          <img
+            src="https://www.sngwallpaper.com/wp-content/uploads/2021/05/Waterfall-landscape.jpg"
+            class="w-full h-[calc(100vh-72px)] object-cover"
+            alt=""
+          />
+        </div>
+
+       
+        <div class="swiper-slide">
+          <img
+            src="https://www.avikalp.com/cdn/shop/products/MWZ2380_wallpaper2.jpg?v=1746037115"
+            class="w-full h-[calc(100vh-72px)] object-cover"
+            alt=""
+          />
+        </div>
+
+        
+        <div class="swiper-slide">
+          <img
+            src="https://m.media-amazon.com/images/I/81yiaOh0WML._AC_UF894,1000_QL80_.jpg"
+            class="w-full h-[calc(100vh-72px)] object-cover"
+            alt=""
+          />
+        </div>
+
+      </div>
+
+      
+      <div class="swiper-button-prev text-white"></div>
+      <div class="swiper-button-next text-white"></div>
+
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+
+      loop: true,
+
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+    });
+  </script>
+<script src = "slide.js"> </script>
+</body>
+
+</html>
