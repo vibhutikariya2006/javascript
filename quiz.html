@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Quiz</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-5">
+
+  <div class="bg-white shadow-xl rounded-xl p-8 w-full max-w-2xl">
+
+    <h1 class="text-3xl font-bold text-center text-blue-600 mb-8">
+      JavaScript Quiz
+    </h1>
+
+    <form id="form" class="space-y-8">
+
+      <!-- Question 1 -->
+      <div class="bg-gray-50 p-5 rounded-lg border">
+        <h2 class="font-semibold text-lg mb-4">
+          1. Which keyword is used to declare a variable in JavaScript?
+        </h2>
+
+        <label class="block mb-2">
+          <input type="radio" name="1" class="mr-2">
+          A. int
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="1" class="mr-2 correctanswer">
+          B. var
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="1" class="mr-2">
+          C. string
+        </label>
+
+        <label class="block">
+          <input type="radio" name="1" class="mr-2">
+          D. define
+        </label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="bg-gray-50 p-5 rounded-lg border">
+        <h2 class="font-semibold text-lg mb-4">
+          2. Which company developed JavaScript?
+        </h2>
+
+        <label class="block mb-2">
+          <input type="radio" name="2" class="mr-2">
+          A. Microsoft
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="2" class="mr-2">
+          B. Google
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="2" class="mr-2 correctanswer">
+          C. Netscape
+        </label>
+
+        <label class="block">
+          <input type="radio" name="2" class="mr-2">
+          D. Oracle
+        </label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="bg-gray-50 p-5 rounded-lg border">
+        <h2 class="font-semibold text-lg mb-4">
+          3. What will this code output? console.log(typeof 10);
+        </h2>
+
+        <label class="block mb-2">
+          <input type="radio" name="3" class="mr-2">
+          A. "integer"
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="3" class="mr-2 correctanswer">
+          B. "number"
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="3" class="mr-2">
+          C. "int"
+        </label>
+
+        <label class="block">
+          <input type="radio" name="3" class="mr-2">
+          D. "float"
+        </label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="bg-gray-50 p-5 rounded-lg border">
+        <h2 class="font-semibold text-lg mb-4">
+          4. Which symbol is used for comments in JavaScript?
+        </h2>
+
+        <label class="block mb-2">
+          <input type="radio" name="4" class="mr-2">
+          A. &lt;!-- --&gt;
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="4" class="mr-2">
+          B. ** **
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="4" class="mr-2 correctanswer">
+          C. //
+        </label>
+
+        <label class="block">
+          <input type="radio" name="4" class="mr-2">
+          D. ##
+        </label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="bg-gray-50 p-5 rounded-lg border">
+        <h2 class="font-semibold text-lg mb-4">
+          5. Which method displays output in the browser console?
+        </h2>
+
+        <label class="block mb-2">
+          <input type="radio" name="5" class="mr-2">
+          A. print()
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="5" class="mr-2">
+          B. display()
+        </label>
+
+        <label class="block mb-2">
+          <input type="radio" name="5" class="mr-2 correctanswer">
+          C. console.log()
+        </label>
+
+        <label class="block">
+          <input type="radio" name="5" class="mr-2">
+          D. write()
+        </label>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center">
+        <button
+          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300"
+        >
+          Submit
+        </button>
+      </div>
+
+    </form>
+
+    <div id="result">
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
