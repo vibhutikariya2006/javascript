@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product CRUD App</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-stone-200">
+    <div class="max-w-7xl mx-auto p-5">
+      <div class="flex flex-col md:flex-row gap-4 mb-6">
+        <input
+          id="searchBtn"
+          type="text"
+          placeholder=" Search Product..."
+          class="w-full md:w-80 border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+        <select
+          id="sort"
+          class="border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="">Sort By Price</option>
+          <option value="low">Low To High</option>
+          <option value="high">High To Low</option>
+        </select>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow mb-8">
+        <h2 class="text-2xl font-bold mb-4">Add / Update Product</h2>
+
+        <div
+          class="bg-white rounded-2xl shadow-lg p-8 mb-10 flex flex-col gap-4"
+        >
+          <input
+            type="text"
+            id="title"
+            placeholder="Product Title"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            type="number"
+            id="price"
+            placeholder="Product Price"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            type="text"
+            id="image"
+            placeholder="Image URL"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            type="text"
+            id="category"
+            placeholder="Category"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div class="flex gap-3 mt-4">
+          <button
+            id="addBtn"
+            class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+          >
+            Add Product
+          </button>
+
+          <button
+            id="updateBtn"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+          >
+            Update Product
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="products"
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+      ></div>
+    </div>
+
+    <script src="practical.js"></script>
+  </body>
+</html>
